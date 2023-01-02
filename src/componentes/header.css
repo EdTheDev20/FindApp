@@ -1,0 +1,50 @@
+#navegacao{
+    background-color: rgb(242, 103, 59);
+    height: 75px;
+    width: 100%;
+ 
+}
+
+#menu {
+    position: absolute;
+    left: 60%; 
+    top: 6%;
+    font-family: 'Proxima Nova';
+    font-weight: 80;
+    font-size: 23px;
+    line-height: 10px;
+
+
+}
+
+#borda{
+    color: #F2673B;;
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 15px;
+    animation-name: exemplo;
+    animation-duration:2s;
+}
+
+
+  #menu ._SortOfLink:hover{
+    color: #c33e16;
+    /* background-color: yellow; */
+    border: 2px solid grey;
+}
+._SortOfLink{
+    margin: 20px;
+    text-decoration: none;
+}
+
+#logo{
+    position: absolute;
+    left: 7.21%;
+    top:-2%;
+    font-family: 'Proxima Nova';
+    font-weight: 80;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    
+}

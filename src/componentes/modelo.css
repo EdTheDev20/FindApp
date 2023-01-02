@@ -1,0 +1,73 @@
+#divM{
+    
+    width: 1140px;
+    height: 270px;
+    margin-left:46px ;
+    margin-top: 260px ;
+    margin-bottom: -20%;
+    background: #F5F3F3;
+    border-radius: 20px;
+}
+#fotoperdida{
+    position: absolute;
+    width: 328px;
+    height: 200px;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+#titulo_model{
+        position: absolute;
+        width: 328px;
+        height: 32px;
+        left: 35%;
+
+    font-family: 'Proxima Nova';
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 30px;
+
+
+    color: #000000;
+}
+#descricao{
+    
+    width: 406px;
+    height: 32px;
+    margin-left:34% ;
+    margin-top: 60px;
+    
+
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: justify;
+    color: #767272;
+
+}
+#status{
+   
+    width: 406px;
+    height: 32px;
+    margin-left:34% ;
+    margin-top: 70px;
+
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: justify;
+    color: #000000;
+
+}
+#red{
+    color: red;
+}
+#green{
+    color: rgb(19, 228, 19);
+}

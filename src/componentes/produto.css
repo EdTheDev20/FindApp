@@ -1,0 +1,51 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
+#red{
+  color: red;
+}
+#green{
+  color: rgb(19, 228, 19);
+}
+
+.imagemProduto #imagem {
+  display: inline;
+  width: 374px;
+  height: 296px;
+  border-radius: 30px;
+}
+.gridContainer{
+margin-top: 50px;
+  display:grid;
+  justify-content: center;
+  justify-items: center;
+}
+.imagemProduto ._textoProduto{
+float: right;  
+}
+
+._conteudo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: #5C5A5A;
+}
+
+.imagemProduto{
+  margin-right: 300px;
+}
+
+._textoProduto .Texto{
+  font-family: "Proxima Nova", sans-serif;
+}
+
+._submain{
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.detalhes{
+  margin-top: 20px;
+  padding: 20px 0px 0px 20px;
+border-radius: 20px;
+  background-color: #F5F3F3;
+  width: 887px;
+  height: 866px;
+  z-index: -1;
+}

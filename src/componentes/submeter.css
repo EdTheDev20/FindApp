@@ -1,0 +1,114 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
+
+.form_h1 {
+  font-family: "Proxima Nova", sans-serif;
+}
+.input_Type_Text{
+  border: none;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  width: 500px;
+  height: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#desc,
+#file,
+#radio {
+  border: 2px solid #818181;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+}
+
+div#desc {
+  margin-bottom: 10px;
+}
+div#file {
+  margin-bottom: 10px;
+}
+
+#objLocation {
+  background-image: url(../assets/icons/marcador-de-mapa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+}
+
+._in_Put:checked {
+  background-color: #818181;
+}
+#objDate {
+  background-image: url(../assets/icons/calendar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 35px;
+}
+
+._in_Put#anexArchive{
+  margin:2px;
+}
+
+._in_Put#descCont{
+  margin:2px;
+}
+
+._in_Put::file-selector-button{
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color: #D9D9D9;
+border:2px solid #939292;
+border-radius: 15px;
+padding: 5px 5px 5px 5px;
+width: 100px;
+}
+#userPhone {
+  background-image: url(../assets/icons/phone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 35px;
+}
+#objName {
+  background-image: url(../assets/icons/product.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 35px;
+}
+
+#radio {
+  width: 502px;
+}
+#form,
+#grid-container {
+  justify-items: center;
+  display: grid;
+}
+
+
+#radio > ._in_Put {
+  display: inline-block;
+}
+
+label{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+._in_Put {
+  margin: 20px 0px 20px 0px;
+  display: block;
+}
+
+.inputTypeSubmit{
+  margin-left:230px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #222121;
+  border: 2px solid #C06D21;
+  color: #C06D21;
+  width: 83px;
+  height: 23px;
+  border-radius: 3px;
+}
+
+.inputTypeSubmit:hover{
+  background-color:#554848;
+  color:#d77417 ;
+}

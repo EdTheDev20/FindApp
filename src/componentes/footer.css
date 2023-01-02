@@ -1,0 +1,74 @@
+#area1{
+    position:absolute;
+     height:34%;
+     width: 100%;
+ 
+ }
+ #logo1{
+   
+     position: absolute;
+     width: 250px;
+     height: 100px;
+     left: 46px;
+     top: 1290px;
+     
+     font-family: 'Proxima Nova';
+     font-weight: 80;
+     font-size: 30px;
+     line-height: 25px;
+     
+     color: #FFFFFF;
+ }
+ #title3{
+     position: absolute;
+     width: 300px;
+     height: 100px;
+     left: 57px;
+     top: 1330px;
+ 
+     font-family: 'Trebuchet MS';
+     font-weight: 100;
+     font-size: 22px;
+     line-height: 25px;
+     text-align: justify;
+ 
+     color: #FFFFFF;
+ }
+ #title4{
+         position: absolute;
+     width: 220px;
+     height: 37px;
+     left: 926px;
+     top: 1300px;
+ 
+     font-family: 'Trebuchet MS';
+     
+     font-weight: 80;
+     font-size: 23px;
+     line-height: 26px;
+     text-align: justify;
+ 
+     color: #FFFFFF;
+ }
+ #foto{
+     position: absolute;
+     width: 40px;
+     height:40px;
+     left: 950px;
+     top: 1355px;
+ 
+ }
+ #foto1{
+     position: absolute;
+     width: 40px;
+     height:40px;
+     left: 1010px;
+     top: 1355px;  
+ }
+ #foto2{
+     position: absolute;
+     width: 40px;
+     height:40px;
+     left: 1070px;
+     top: 1355px;  
+ }

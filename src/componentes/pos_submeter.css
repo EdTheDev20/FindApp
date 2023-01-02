@@ -1,0 +1,28 @@
+#pos_sub{
+    width: 1000px;
+    height: 400px;
+    margin-left: 65px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    background: #F5F3F3;
+    border-radius: 20px;
+}
+#mensagem{
+    position: absolute;
+    width: 540px;
+    height: 82px;
+    left:250px;
+    top: 202px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #000000;
+}
+#footer_sub{
+    position:absolute;
+    height:34%;
+    width: 100%;
+}
