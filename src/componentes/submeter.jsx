@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import '../componentes/submeter.css'
+import imagem3 from "../componentes/Capture d’écran 2022-12-28 134957.png";
 function Submeter() {
   
     return (
@@ -55,7 +56,7 @@ function Submeter() {
           </div>
 
           <div id="grid-container">
-            {" "}
+            {""}
             <label htmlFor="estado">Estado</label>
             <div id="radio">
               <input className="_in_Put" type="radio" name="ee" id="estado" value={"Perdido"}/> <label htmlFor="radio">Perdi</label>
@@ -66,6 +67,10 @@ function Submeter() {
           <Link to={'/pos_submeter'}><input className="inputTypeSubmit _in_Put" type="submit" value="Submeter"/> </Link>
         </form>
       </div>
+      <footer>
+            <img id={'footer_proc'} src={imagem3} alt="" srcset="" />
+        </footer>
+       
     </>
     );
 }

@@ -15,7 +15,10 @@ function Procurar({search,foto,foto2,foto3,title,title2,title3,descricao,descric
            
         </article>
         </div>
-        <Modelo foto={foto} title={title} descricao={descricao} estado={estado}></Modelo>
+        <Modelo foto={foto} title={title} descricao={descricao} estado={estado}>
+
+            
+        </Modelo>
         <Modelo foto={foto2} title={title2} descricao={descricao2} estado={estado2}></Modelo>
         <Modelo foto={foto3} title={title3} descricao={descricao3} estado={estado3}></Modelo>
         <br />

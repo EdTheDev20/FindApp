@@ -6,7 +6,7 @@ function Footer({area,title3,title4,foto,foto1,foto2}) {
   
     return (
         <>  
-        <div >
+        <div className="Footer" >
         <img id={"area1"} src={area} alt="" srcset="" />
         <h2 id={'logo1'}>FIND</h2>
             <p id={'title3'}>{title3}</p>

@@ -1,8 +1,11 @@
+
 import  {React, useState } from "react";
 import "./body.css";
 
 
-function Produto({nomep,imagem,estado, descricao,dataperdido,localizacao,telefone,dataemquefoiachado}) {
+
+function Produto({nomep,imagem,estado,descricao,dataperdido,localizacao,telefone,dataemquefoiachado}) {
+
 /*
 const Objecto = {
   nomeproduto:'iPhone 11',

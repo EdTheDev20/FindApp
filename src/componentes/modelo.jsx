@@ -12,7 +12,6 @@ function Modelo({foto,title,descricao,estado}) {
     }
     return (
         <>
-         
         <div id={"divM"}>
          <article> 
             <h4 id="titulo_model">{title}</h4> 
