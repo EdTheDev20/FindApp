@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from 'react-router-dom';
 import '../componentes/submeter.css'
 import imagem3 from "../componentes/Capture d’écran 2022-12-28 134957.png";
 function Submeter() {
+  const [dados,setDados] = useState({NomeObj:'',userPhone:'',DataObj:'',Localizacao:'',descCont:'',filePath:'',})
+   /* function handleChange(event){
+    useState({...dados,
+    
+    })
+    useState({...dados,
+    NomeObj:event.target.value})
+
+  } */
   
     return (
     <>
@@ -20,7 +29,7 @@ function Submeter() {
           <input
           className="input_Type_Text _in_Put"
             type="text"
-            name=""
+            name="userPhone"
             id="userPhone"
             placeholder="+244 936 721 457"
           />
@@ -44,7 +53,7 @@ function Submeter() {
             <input
             className="input_Type_Text _in_Put"
               type="text"
-              name=""
+              name="descCont"
               id="descCont"
               placeholder="Pode dar descrições mais precisas do objecto que perdeu..."
             />
@@ -52,15 +61,15 @@ function Submeter() {
 
           <div id="file">
             <label htmlFor="">Anexe uma fotografia</label>
-            <input className="_in_Put" type="file" name="" id="anexArchive" accept="image/png,image/jpeg"/>
+            <input className="_in_Put" type="file" name="filePath" id="anexArchive" accept="image/png,image/jpeg"/>
           </div>
 
           <div id="grid-container">
             {""}
             <label htmlFor="estado">Estado</label>
             <div id="radio">
-              <input className="_in_Put" type="radio" name="ee" id="estado" value={"Perdido"}/> <label htmlFor="radio">Perdi</label>
-              <input className="_in_Put" type="radio" name="ee" id="estado" value={"Achado"} /> <label htmlFor="radio">Achei</label>
+              <input className="_in_Put" type="radio" name="ee" id="estado" value="Perdido"/> <label htmlFor="radio">Perdi</label>
+              <input className="_in_Put" type="radio" name="ee" id="estado" value="Achado" /> <label htmlFor="radio">Achei</label>
             </div>
           </div>
           
@@ -70,7 +79,8 @@ function Submeter() {
       <footer>
             <img id={'footer_proc'} src={imagem3} alt="" srcset="" />
         </footer>
-       
+
+        
     </>
     );
 }

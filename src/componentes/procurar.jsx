@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import './procurar.css';
 import Modelo from "./modelo";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
 function Procurar({search,foto,foto2,foto3,title,title2,title3,descricao,descricao2,descricao3,estado,estado2,estado3,footer}) {
    
@@ -15,10 +16,9 @@ function Procurar({search,foto,foto2,foto3,title,title2,title3,descricao,descric
            
         </article>
         </div>
-        <Modelo foto={foto} title={title} descricao={descricao} estado={estado}>
-
-            
-        </Modelo>
+        <Link to='/src/componentes/produto'>  <Modelo foto={foto} title={title} descricao={descricao} estado={estado}>
+        </Modelo></Link>
+      
         <Modelo foto={foto2} title={title2} descricao={descricao2} estado={estado2}></Modelo>
         <Modelo foto={foto3} title={title3} descricao={descricao3} estado={estado3}></Modelo>
         <br />
