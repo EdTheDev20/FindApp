@@ -23,6 +23,8 @@ function App() {
     <Router>
       {/*Aqui é onde acontece os links tendo o cabeçario como elemento comum em todos*/}
       <Header></Header>
+
+      {/* EDGaR */ }
       <Routes>
         {/*O body é tratado como a home logo sera a primeira pagina apresentada e também aquela que quando clicado no botao home no cabeçario sera apresentada*/}
         <Route path='/' element={ <Body foto1={imagem} foto2={imagem2} title={"Junte-se a nos e encontre o que perdeu"} title2={"Disponiveis em todo pais"} title3={'Uma aplicação focada em ajudar pessoas que perderam seus pertences'} title4={"Nossas redes sociais"} conteudo2={'O que perdeu durante um passeio turistico pode ser achado.'} imagem3={imagem3} face={face} twitter={twitter} insta={insta}></Body>}/>
