@@ -4,7 +4,15 @@ const mysql = require("mysql");
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const multer = require('multer')
-const upload= multer({dest: '/uploads/'})
+const storage = multer.diskStorage({
+destination: function(req,file,cb){cb(null,'./uploads/')} ,
+filename: function(req,file,cb){
+  nome = file.originalname
+
+  cb(null,nome)}
+});
+
+const upload= multer({storage : storage})
 const db = mysql.createPool({
   host: "localhost",
   user: "root",
@@ -25,15 +33,16 @@ app.get("/", (req, res) => {
 
 }) } )  */
 app.use(cors())
-app.use(bodyParser.urlencoded({extended:true}))
-app.use(express.json())
-app.post("/api/submeter",(req,res)=>{
+app.use('/uploads',express.static('uploads'));
+ /* app.use(bodyParser.urlencoded({extended:true})) */
+/* app.use(express.json()) */
+app.post("/api/submeter",upload.single('filePath'),(req,res,next)=>{
 const nomeObjecto = req.body.nomeObjecto
 const numeroTelefone= req.body.numeroTelefone
 const dataPerdido= req.body.dataPerdido
 const localizacao= req.body.localizacao
 const descricaoProduto= req.body.descricaoProduto
-const imagePath= req.body.imagePath
+const imagePath= req.file.path
 const estado= req.body.estado 
  const sqlinsert ='INSERT INTO `item` (`nomeObjecto`, `numeroTelefone`,`dataPerdido`, `localizacao`, `descricaoProduto`, `imagePath`,`estado`) VALUES ("?","?", "?", "?","?", "?", "?");';  
 
@@ -42,10 +51,23 @@ db.query(sqlinsert,[nomeObjecto,numeroTelefone,dataPerdido,localizacao,descricao
       console.log(err.code) 
     }
     else{
-  console.log("SUCESSOOOOO")
+  console.log("Inserção com sucesso")
 } 
 }) 
 } ) 
+
+app.get('/api/receber',(req,res)=>{
+const sqlSelect = "SELECT * FROM item";
+db.query(sqlSelect,(err,result)=>{
+if(err){
+  console.log(err.code)
+} else {
+  console.log(result);
+  res.send(result)
+}
+})
+
+})
 
 
 app.listen(3001, () => {
